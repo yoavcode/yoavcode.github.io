@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #d9d9d9;
+    height: 160vh;
+}
+
+.nav-bar {
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 1.8% 0%;
+}
+
+.nav-bar a {
+    font-size: 26px;
+    font-weight: bold;
+    color: #042d97;
+    cursor: pointer;
+}
+
+#login,
+#logout {
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+    color: white;
+    padding: 10px 30px;
+}
+
+#loginsWrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.image-div {
+    height: 114vh;
+    background-image: url(/static/photos/home-monitor2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.image-div h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.image-div-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    text-align: center;
+    gap: 15px;
+}
+
+.image-div-wrapper p {
+    font-size: 24px;
+    color: white;
+}
