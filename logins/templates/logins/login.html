@@ -1,0 +1,42 @@
+{% extends 'logins/layout.html' %}
+
+{% block body %}
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <label for="id_username">Username:</label>
+            <input type="text" name="username" id="id_username" required>
+            {% if form.errors.username %}
+                {% for error in form.errors.username %}
+                    <p style="color: red;">{{ error }}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div>
+            <label for="id_password1">Password:</label>
+            <input type="password" name="password1" id="id_password1" required>
+            {% if form.errors.password1 %}
+                {% for error in form.errors.password1 %}
+                    <p style="color: red;">{{ error }}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div>
+            <label for="id_password2">Password confirmation:</label>
+            <input type="password" name="password2" id="id_password2" required>
+            {% if form.errors.password2 %}
+                {% for error in form.errors.password2 %}
+                    <p style="color: red;">{{ error }}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div>
+            <button type="submit">Register</button>
+        </div>
+        {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+                <p style="color: red;">{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+    </form>
+{% endblock %}

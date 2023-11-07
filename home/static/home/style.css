@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
     font-weight: bold;
     color: #042d97;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #login,
@@ -30,6 +32,12 @@ body {
     background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
     color: white;
     padding: 10px 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+#login:hover,
+#logout:hover {
+    transform: scale(1.05);
 }
 
 #loginsWrapper {
@@ -45,6 +53,7 @@ body {
     display: flex;
     align-content: center;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .image-div h1 {
@@ -69,4 +78,61 @@ body {
 .image-div-wrapper p {
     font-size: 24px;
     color: white;
+}
+
+.div-wrapper div {
+    color: white;
+    text-align: center;
+    background-color: #161B22;
+    width: 22vw;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 30px;
+    font-size: 30px;
+    transition: all 0.5s ease-in-out;
+    overflow: auto;
+}
+
+.div-wrapper div:hover {
+    transform: scale(1.05);
+    background-color: #1B2249;
+    cursor: pointer;
+}
+
+.div-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 6%;
+    height: 30%;
+}
+
+.div-wrapper p {
+    color: #80868F;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.div-view {
+    color: white !important;
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+    float: left;
+}
+
+.div-view::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.div-view:hover::after {
+    width: 100%;
 }

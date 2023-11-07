@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'home/nav.css' %}">
+    <title>Cognitive Abilities practice</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <a>Profile</a>
+        <a>Courses</a>
+        <div id="loginsWrapper">
+            <a id="login" href="{% url 'logins:login' %}">Sign in</a>
+            <a id="logout">Sign out</a>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

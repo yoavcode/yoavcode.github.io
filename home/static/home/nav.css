@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 1.8% 0%;
+}
+
+.nav-bar a {
+    font-size: 26px;
+    font-weight: bold;
+    color: #042d97;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#login,
+#logout {
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+    color: white;
+    padding: 10px 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+#login:hover,
+#logout:hover {
+    transform: scale(1.05);
+}
+
+#loginsWrapper {
+    display: flex;
+    gap: 30px;
+}
