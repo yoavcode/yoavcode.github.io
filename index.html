@@ -7,16 +7,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
   <style>
     body {
-    margin: 0;
-    font-family: 'Alef', sans-serif;
-    background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #f5f5f5;
-    text-align: center;
-    padding: 2rem;
-  }
+      margin: 0;
+      font-family: 'Alef', sans-serif;
+      background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #f5f5f5;
+      text-align: center;
+      padding: 2rem;
+    }
     .overlay {
       background-color: rgba(0, 0, 0, 0.75);
       padding: 2rem;
@@ -42,19 +42,34 @@
       color: #ccc;
       margin: 0 auto 1.5rem;
     }
-    .buttons a {
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .button-container a {
       display: inline-block;
-      margin: 0.5rem;
-      padding: 0.6rem 1.4rem;
+      min-width: 220px;
+      padding: 0.75rem 1.5rem;
       background-color: #4caf50;
       color: white;
       text-decoration: none;
       border-radius: 6px;
-      transition: background-color 0.3s;
       font-weight: bold;
+      font-size: 1rem;
+      text-align: center;
+      transition: background-color 0.3s;
     }
-    .buttons a:hover { background-color: #388e3c; }
-    .footer { margin-top: 2rem; font-size: 0.9rem; color: #888; }
+    .button-container a:hover {
+      background-color: #388e3c;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
   </style>
 </head>
 <body>
@@ -62,14 +77,14 @@
     <div class="profile-img"></div>
     <h1>יואב משרקי</h1>
     <p>
-  מפתח תוכנה מנוסה ובעל חזון, עם תואר B.Sc במדעי המחשב (התמחות ב־Java), תעודת הוראה במדעי המחשב למגמת סייבר, והסמכה כטכנאי חשמל ואלקטרוניקה.<br>
-  בעל ניסיון עשיר בפיתוח מערכות ואתרים מבוססי Python, פיתוח אפליקציות ל־iOS ואנדרואיד (Swift, Flutter), ויצירת משחקי AAA מתקדמים ב־Unity וב־Unreal Engine.<br>
-  יוצר קורסים חינוכיים ביוטיוב ומרצה מוכר לתכנות ולפיתוח משחקים. משמש כ־CTO של <a href="https://www.balimashu.com" target="_blank">Balimashu</a> – מערכת מתקדמת להשוואת ומעקב מחירים, בה פיתחתי חלק ניכר מהמנוע הטכנולוגי.<br>
-  מוביל חדשנות חינוכית וטכנולוגית דרך שילוב בין פיתוח, הדרכה ותשוקה לקוד.
-</p>
-    <div class="buttons">
+      מפתח תוכנה מנוסה ובעל חזון, עם תואר B.Sc במדעי המחשב (התמחות ב־Java), תעודת הוראה במדעי המחשב למגמת סייבר, והסמכה כטכנאי חשמל ואלקטרוניקה.<br>
+      בעל ניסיון עשיר בפיתוח מערכות ואתרים מבוססי Python, פיתוח אפליקציות ל־iOS ואנדרואיד (Swift, Flutter), ויצירת משחקי AAA מתקדמים ב־Unity וב־Unreal Engine.<br>
+      יוצר קורסים חינוכיים ביוטיוב ומרצה מוכר לתכנות ולפיתוח משחקים. משמש כ־CTO של <a href="https://www.balimashu.com" target="_blank">Balimashu</a> – מערכת מתקדמת להשוואת ומעקב מחירים, בה פיתחתי חלק ניכר מהמנוע הטכנולוגי.<br>
+      מוביל חדשנות חינוכית וטכנולוגית דרך שילוב בין פיתוח, הדרכה ותשוקה לקוד.
+    </p>
+    <div class="button-container">
       <a href="mailto:yoavmashraki@gmail.com">שלחו לי מייל</a>
-      <a href="https://www.balimashu.com" target="_blank">Balimashu</a>
+      <a href="https://www.balimashu.com" target="_blank">baliMASHu</a>
       <a href="https://www.youtube.com/@yoavmashraki" target="_blank">הקורסים ביוטיוב</a>
       <a href="https://www.linkedin.com/in/yoav-mashraki-34a083346/" target="_blank">LinkedIn</a>
     </div>
