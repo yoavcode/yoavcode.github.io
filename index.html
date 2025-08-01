@@ -1,86 +1,81 @@
-
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>יואב משרקי | YoavCode</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>יואב משרקי | Yoav Mashraki</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8f9fa;
-      color: #212529;
-      text-align: center;
-      direction: rtl;
+    margin: 0;
+    font-family: 'Alef', sans-serif;
+    background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 2rem;
+  }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
-    header {
-      background: #343a40;
-      color: white;
-      padding: 2rem 1rem;
+    .profile-img {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background-image: url('https://yoavcode.github.io/yoav_pic.jpeg');
+      background-size: cover;
+      background-position: center;
+      margin: 1rem auto;
+      border: 3px solid #4caf50;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    .cta-button {
-      display: inline-block;
-      background-color: #007bff;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 1rem;
+    h1 { margin: 0.5rem 0; font-size: 2rem; }
+    p {
       font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 520px;
+      color: #ccc;
+      margin: 0 auto 1.5rem;
     }
-    footer {
-      margin-top: 2rem;
-      padding: 1rem;
-      background-color: #e9ecef;
-      color: #6c757d;
-      font-size: 0.9rem;
-    }
-    .social-links a {
-      margin: 0 0.5rem;
-      color: #007bff;
+    .buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.6rem 1.4rem;
+      background-color: #4caf50;
+      color: white;
       text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      font-weight: bold;
     }
+    .buttons a:hover { background-color: #388e3c; }
+    .footer { margin-top: 2rem; font-size: 0.9rem; color: #888; }
   </style>
 </head>
 <body>
-  <header>
+  <div class="overlay">
+    <div class="profile-img"></div>
     <h1>יואב משרקי</h1>
-    <p>מפתח תוכנה | מדריך פייתון | CTO של Balimashu</p>
-  </header>
-
-  <section>
-    <h2>ברוכים הבאים ל-YoavCode</h2>
     <p>
-      אני יואב, בעל תואר BSc במדעי המחשב מהאוניברסיטה הפתוחה ותעודת הוראה במדעי המחשב למגמת סייבר.
-      מפתח תוכנה מיומן בכל שפות התכנות, יוצר משחקי AAA ב-Unity ו-Unreal Engine,
-      אפליקציות ומשחקים ל-iOS ולאנדרואיד, אתרים מקצועיים, וסרטוני הדרכה ביוטיוב.
-    </p>
-    <a href="https://www.youtube.com/@yoavmashraki" class="cta-button" target="_blank">צפו בקורסים שלי ביוטיוב</a>
-  </section>
-
-  <footer>
-    <div class="social-links">
-      <a href="https://www.balimashu.com/">baliMASHu</a>
+  מפתח תוכנה מנוסה ובעל חזון, עם תואר B.Sc במדעי המחשב (התמחות ב־Java), תעודת הוראה במדעי המחשב למגמת סייבר, והסמכה כטכנאי חשמל ואלקטרוניקה.<br>
+  בעל ניסיון עשיר בפיתוח מערכות ואתרים מבוססי Python, פיתוח אפליקציות ל־iOS ואנדרואיד (Swift, Flutter), ויצירת משחקי AAA מתקדמים ב־Unity וב־Unreal Engine.<br>
+  יוצר קורסים חינוכיים ביוטיוב ומרצה מוכר לתכנות ולפיתוח משחקים. משמש כ־CTO של <a href="https://www.balimashu.com" target="_blank">Balimashu</a> – מערכת מתקדמת להשוואת ומעקב מחירים, בה פיתחתי חלק ניכר מהמנוע הטכנולוגי.<br>
+  מוביל חדשנות חינוכית וטכנולוגית דרך שילוב בין פיתוח, הדרכה ותשוקה לקוד.
+</p>
+    <div class="buttons">
+      <a href="mailto:yoavmashraki@gmail.com">שלחו לי מייל</a>
+      <a href="https://www.balimashu.com" target="_blank">Balimashu</a>
+      <a href="https://www.youtube.com/@yoavmashraki" target="_blank">הקורסים ביוטיוב</a>
       <a href="https://www.linkedin.com/in/yoav-mashraki-34a083346/" target="_blank">LinkedIn</a>
-      <a href="https://www.youtube.com/@yoavmashraki" target="_blank">YouTube</a>
-      <a href="mailto:yoavmashraki@gmail.com">Email</a>
     </div>
-    <p>&copy; 2025 יואב משרקי. כל הזכויות שמורות.</p>
-  </footer>
+    <div class="footer">
+      <p>yoavcode.com &copy; 2025</p>
+    </div>
+  </div>
 </body>
 </html>
